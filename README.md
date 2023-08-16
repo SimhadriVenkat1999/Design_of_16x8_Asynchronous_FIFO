@@ -1,8 +1,10 @@
-# Design_of_16x8_Asynchronous_FIFO
+# Asynchronous_FIFO
 This repository explains the Design of 16x8 Asynchronous FIFO
 # Design of 16x8 Asynchronous FIFO
-This project shows the design of Synchronous FIFO and Asynchronous FIFO
-![afifo-internals](https://github.com/Manikanta-IITB/Design_of_Synchronous_and_Asynchronous_FIFO/assets/138108630/83ba328d-fe6c-44f4-aaab-9af542738b18)
+This project shows the design of Synchronous FIFO and Asynchronous FIFO.The block diagram of asynchronous FIFo is as shown below.![asynch_fifo_block](https://github.com/SimhadriVenkat1999/Design_of_16x8_Asynchronous_FIFO/assets/138531015/ed6c21b3-9302-48b4-92ed-9d7d7e89b902)
+
+
+
 ## Asynchronous FIFO
 <p align="justify">
   An Asynchronous FIFO (First-In-First-Out) is a type of digital circuit that facilitates data storage and transfer between two
@@ -18,6 +20,7 @@ transfers it to the destination clock domain.
 ## Read and Write Pointers
 The FIFO includes read and write pointers that keep track of the current position in memory. The
 write pointer indicates the location where new data is stored, while the read pointer indicates the next data to be read.
+Verified read empty and write full condition by applying inputs.
 ## Data Transfer
 When data is written to the FIFO, it is stored in a specific memory location determined by the write pointer.
 Simultaneously, the write pointer is incremented to point to the next available memory location. Similarly, when data is read
@@ -32,11 +35,8 @@ Asynchronous FIFOs often provide status indicators such as full and empty flags.
 whether the FIFO is full (no more data can be written) or empty (no data is available for reading).
 ## Synchronization and Metastability
 Asynchronous FIFOs employ synchronization elements to address metastability issues
-that can occur when data crosses clock domains. These elements help ensure that the data is properly captured and sampled,
+that can occur when data crosses clock domains. These elements help ensure the data is appropriately captured and sampled,
 reducing the risk of unpredictable behavior.
 Overall, the theory behind an asynchronous FIFO revolves around managing data transfer between different clock domains
-while considering timing differences, ensuring data integrity, and providing status indications for proper operation. The
-actual implementation of an asynchronous FIFO involves designing the circuitry and control logic based on these principles.</p>
-![Screenshot from 2023-08-08 00-06-04](https://github.com/Manikanta-IITB/Design_of_Synchronous_and_Asynchronous_FIFO/assets/138108630/66ff6954-6a41-4682-874a-248ffe3d4e1d)
-
-
+while considering timing differences, ensuring data integrity, and providing status indications for proper operation. Implementing an asynchronous FIFO involves designing the circuitry and control logic based on these principles.</p>
+![20BZr](https://github.com/SimhadriVenkat1999/Design_of_16x8_Asynchronous_FIFO/assets/138531015/875da036-380e-42ce-9474-29c2941733f8)
